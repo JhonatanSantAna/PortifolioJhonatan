@@ -1,48 +1,120 @@
+/* PALETA DE CORES
+    #153E3B VERDE    
+    #11087A AZUL
+    #346499 AZUL
+    #6C7482 CINZA
+    #421C13 MARROM
+    #666B4C MARROM
+    #CDD47C DOURADO
+    #FFEDCA AMARELO
+    #E5EDD8 CINZA
+*/
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 body{
     font-family: 'IBM Plex Mono', monospace;
+    background-color: #E5EDD8;
 }
 
-/* Espacamentos em todos os paragrafos */
+
+/* #content{
+    width: 1200px;
+} */
+
+/* Elementos padrões */
     p{
         padding: 10px;
+    }
+
+    a:link, a:visited{
+        text-decoration: none;
+        color: #CDD47C;
+        font-size: medium;
+    }
+
+    a:hover{
+        text-decoration: underline;
     }
     
 
 /* Menu de navegacao */
+    .header{
+        display: flex;
+        justify-content: center;
+        background-color: #153E3B ;
+    }
+        .work{
+            display: none;
+        }
+
+        .nav-primary{
+            display: flex;
+            width: 100%;
+            max-width: 1140px;
+            border-bottom: solid 5px #153E3B;
+            justify-content: flex-end;
+        }
+
         #nav-primary{
             padding: 30px;
             display: flex;
             flex-direction: row;
-            justify-content: flex-end;
         }
-            #nav-primary li{
+            #nav-primary li{ 
                 padding: 10px;
             }
+
+            /* #nav-works:hover > .work{
+                display: inline-block;
+            } */
 
 
 /* Sobre mim */
     .about{
-        padding: 0 20% 0;
-        height: 200px;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
+    .about-description{
+        padding: 50px;
+        max-width: 1140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #btnCall{
+            color: #421C13;
+        }
+        .about p{
+            padding: 10px;
+        }
         .about img{
             max-width: 200px;
+            max-height: 200px;
         }
 
 
 /* Trabalhos realizados */
+    .portfolio{
+        display: flex;
+        justify-content: center;
+    }
+
     .portfolio img{
-        max-width: 200px;
+        max-width: 300px;
         max-height: 200px;
     }
     
+    #works{
+        padding: 30px;
+        width: 1140px;
+    }
+
     #works li{
+        height: 250px;
         padding: 20px 0 20px;
         display: flex;
         align-items: center;
@@ -53,14 +125,30 @@ body{
         flex-direction: row-reverse;
     }
 
+/* Contato */
+    .contact, .footer{
+        background-color: #421C13;
+        color: #CDD47C;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        justify-content: end;   
+        padding-bottom: 50px;
+    }
+
 
 /* Rodape */
     .footer{
-        margin-top: 50px;
+        height: 100px;
+    }
+    .footer p{
+        border-top: solid 1px #CDD47C;
+        width: 600px;
         display: flex;
-        flex-direction: column;
-        align-items: center;        
+        justify-content: center;
     }
     .footer img{
         max-width: 40px;
+        padding-top: 10px;
     }

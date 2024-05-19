@@ -8,44 +8,71 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <header>
+    <body onload="aviso()">
+        <div  id="box"></div>
+        <header class="header">
             <nav class="nav-primary">
                 <ul id="nav-primary">
-                    <li>Sobre</li>
-                    <li>Portifólio</li>
-                    <li>Contato</li>
-                    <li>Outros</li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li id="nav-works"><a href="#works">Portifólio</a>
+                        <li class="work"><a href="#t1">Trabalho 1</a></li>
+                        <li class="work"><a href="#t2">Trabalho 2</a></li>
+                        <li class="work"><a href="#t3">Trabalho 3</a></li>
+                        <li class="work"><a href="#t4">Trabalho 4</a></li>
+                    </li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section class="about">
-            <p>Descrição de quem é Jhonatan</p>
-            <img src="./images/color1quad.jpeg" alt="Foto de Jhonatan">
+        <section class="about" id="about">
+            <div class="about-description">
+                <div>
+                <p>Precisa de um desenvolvedor eficaz?</p>
+                <p>Jhonatan Sant’Ana atua profissionalmente há mais de 13 anos com tecnologias.
+                    <br>Atualmente Desenvolve seus projetos pessoais nas áreas de Back-End, Mobile e Front-End. Também desempenha o cargo de consultor técnico numa empresa desenvolvedora de software para ERP e gestão.
+                    <br>Focado em soluções eficazes, é capaz de viabilizar implementações de tecnologias inovadoras.
+                </p>
+                <p><a href="#contact" id="btnCall">Vamos resolver?</a></p>
+                </div>
+                <img src="./images/color1quad.jpeg" alt="Foto de Jhonatan">
+            </div>
         </section>
         
         <main class="portfolio">
             <ol id="works">
-                <li>
+                <li id="t1">
+                    <a href="https://jhonatansantana.com.br/jsencryptor/jsencryptor.html" target="_blank"><img src="./images/criptografia.jpeg"></a>
+                    <div>
+                        <p>Encriptador de textos </p>
+                        <p>Projeto desenvolvido a partir do modelo proposto pelo Programa ONE, da Oracle, em parceria com Alura. <br>
+                        A página tem por objetivo codificação de mensagens. Nesta versão, a criptografia ganha um modelo hexadecimal com todo o alfabeto latino, em letras maiúsculas e minúsculas. Além disso, diversos caracteres especiais abrangidos na encriptação.</p>
+                    </div>
+                </li>
+                <li id="t2">
+                    <a href="https://heloisababies.com.br" target="_blank"><img src="./images/ecomerce.jpg"></a>
+                    <p>Site e-comerce da artesã Juliana Sant’Ana</p>
+                </li>
+                <li id="t3">
                     <img src="./images/aplicativo.png">
-                    <p>Trabalho 1</p>
-                </li>
-                <li>
-                    <img src="./images/criptografia.jpeg">
-                    <p>Trabalho 2</p>
-                </li>
-                <li>
-                    <img src="./images/ecomerce.jpg">
                     <p>Trabalho 3</p>
                 </li>
-                <li>
+                <li id="t4">
                     <img src="./images/servidor.png">
                     <p>Trabalho 4</p>
                 </li>
             </ol>
         </main>
         
+        <section class="contact" id="contact">
+            <!-- <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                <p>Name: <input type="text" name="name"></p>
+                <p>E-mail: <input type="text" name="mail"></p>
+                <p>Comment: <input type="text" name="comment" size="50"></p>
+                <input type="submit" value="Enviar">
+            </form> -->
+        </section>
+
         <footer class="footer">
             <p>© 2024, Desenvolvido por Jhonatan Sant'Ana</p>
             <section class="links">
@@ -54,5 +81,10 @@
                 <a href="https://wa.me/5522998485759" target="_blank"><img class="linkImg" src="./images/whatsapp.png" alt="Logotipo Whatsapp"></a>
             </section>
         </footer>
+        <script>
+            function aviso() {
+                alert("Página em Construção...");
+            }
+        </script>
     </body>
 </html>
