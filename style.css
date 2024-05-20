@@ -20,9 +20,13 @@ body{
 }
 
 
-/* #content{
-    width: 1200px;
-} */
+#aviso{
+    display: flex;
+    justify-content: center;
+    background-color: #f7ca86 ;
+    height: 50px;
+    align-items:center ;
+}
 
 /* Elementos padrões */
     p{
